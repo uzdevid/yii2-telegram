@@ -25,7 +25,7 @@ Create `telegram` extension with config params
 ```php
 $config = [
     '_bot_' => [
-        'token' => '<bot token>'
+        'token' => '5390057974:AAFsR6ySk6CTPHs9neYkAXdKTO5cer1cdho'
     ]
 ];
 

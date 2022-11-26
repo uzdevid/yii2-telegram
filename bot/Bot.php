@@ -6,6 +6,7 @@ use uzdevid\telegram\Telegram;
 
 /**
  * @property Sender $sender
+ * @property Editor $editor
  * @property Payload $payload
  * @property Handler $handler
  * @property int $chat_id
@@ -18,6 +19,10 @@ class Bot extends Telegram {
 
     public function getSender() {
         return new Sender(['token' => $this->token]);
+    }
+
+    public function getEditor() {
+        return new Editor(['token' => $this->token]);
     }
 
     public function getChat_id() {
