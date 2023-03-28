@@ -5,7 +5,7 @@ namespace uzdevid\telegram\bot;
 class Handler extends Bot {
     public function onMessage($message, $callback) {
         $body = $this->payload->body;
-        if ($body !== null && $body->message->text == $message) $callback($body);
+        if ($body !== null && isset($body->message) && $body->message->text == $message) $callback($body);
     }
 
     public function onCommand($command, $callback) {
