@@ -27,7 +27,7 @@ class Bot extends Telegram {
 
     public function getChat_id() {
         if (isset($this->payload->body->message)) $this->_chat_id = $this->payload->body->message->chat->id;
-        elseif (isset($this->payload->body->callback_query)) $this->_chat_id = $this->payload->body->callback_query->chat->id;
+        elseif (isset($this->payload->body->callback_query)) $this->_chat_id = $this->payload->body->callback_query->message->chat->id;
         elseif (isset($this->payload->body->inline_query)) $this->_chat_id = $this->payload->body->inline_query->form->id;
 
         return $this->_chat_id;
