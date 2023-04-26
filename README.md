@@ -7,13 +7,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```
-composer require uzdevid/yii2-telegram "1.0"
+composer require uzdevid/yii2-telegram "1.2.0"
 ```
 
 or add
 
 ```
-"uzdevid/yii2-telegram": "1.0"
+"uzdevid/yii2-telegram": "1.2.0"
 ```
 
 to the require section of your `composer.json` file.
